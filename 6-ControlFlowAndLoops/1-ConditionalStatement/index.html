@@ -17,14 +17,15 @@
       console.log("result0: ", result0);
 
       // Nested Conditional statement
-      let person = [
+      let people = [
         { name: "Bob" },
         { name: "Aung", gender: "m" },
         { name: "Tom", gender: "M" },
         { name: "Mary", gender: "f" },
       ];
 
-      let result = person.map((person) => {
+      /*
+      let result1 = people.map((person) => {
         if (person.gender) {
           if (person.gender === "m" || person.gender === "M") {
             person.gender = "Male";
@@ -36,8 +37,20 @@
           person.gender = "Unknown";
         }
         return person;
+      });*/
+
+      // another way
+      let result1 = people.map((person) => {
+        if (person.gender === "m" || person.gender === "M") {
+          person.gender = "Male";
+        } else if (person.gender === "f" || person.gender === "F") {
+          person.gender = "Female";
+        } else {
+          person.gender = "Unknown";
+        }
+        return person;
       });
-      console.log("result: ", result);
+      console.log("result1: ", result1);
     </script>
   </body>
 </html>
