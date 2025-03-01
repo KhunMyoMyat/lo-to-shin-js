@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Conditional Expression</title>
+  </head>
+  <body>
+    <script>
+      // Ternary Operator
+      let user = { name: "Bob", age: "22" };
+      let result = user.age >= 18 ? "Autorized" : "Unautorized";
+      console.log("result: ", result);
+
+      // another example
+      const greeting = (person) => {
+        const name = person ? person.name : "Stranger";
+        return `Hello ${name}`;
+      };
+      console.log("truthy result: ", greeting({ name: "Alice" }));
+      console.log("falsy result: ", greeting(null));
+      //  possible falsy expressions are: null, NaN, 0, the empty string (""), and undefined.
+    </script>
+  </body>
+</html>
