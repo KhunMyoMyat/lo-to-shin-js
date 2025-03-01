@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>For In Loop</title>
+  </head>
+  <body>
+    <script>
+      // looping for obj must loop by for-in loop
+      let user = { name: "Bob", age: 22, gender: "Male" };
+      for (p in user) {
+        console.log(`${p} is ${user[p]}`);
+      }
+
+      //   for simple arr can also use for-of loop
+      let users = ["Alice", "Tom", "Bob", "Mary"];
+      for (user of users) {
+        console.log("user: ", user);
+      }
+    </script>
+  </body>
+</html>
