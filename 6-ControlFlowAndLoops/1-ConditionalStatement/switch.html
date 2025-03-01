@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Switch Statement</title>
+  </head>
+  <body>
+    <script>
+      switch (3) {
+        case 1:
+          console.log("hi 1");
+          break;
+        case 2:
+          console.log("hi 2");
+          break;
+        case 3:
+          console.log("h3");
+          break;
+        case 4:
+          console.log("hi 4");
+          break;
+        default:
+          console.log("hi default");
+      }
+
+      // more example
+      let people = [
+        { name: "Bob" },
+        { name: "Aung", gender: "m" },
+        { name: "Tom", gender: "M" },
+        { name: "Mary", gender: "f" },
+      ];
+
+      let result = people.map((person) => {
+        switch (person.gender) {
+          case "m":
+          case "M":
+            person.gender = "Male";
+            break;
+          case "f":
+          case "F":
+            person.gender = "Female";
+            break;
+          default:
+            person.gender = "Unknown";
+        }
+        return person;
+      });
+      console.log("result gender: ", result);
+    </script>
+  </body>
+</html>
