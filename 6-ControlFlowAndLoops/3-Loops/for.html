@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let nums = [11, 2, -1, 22, 3];
+      console.log("before use break statement: ", nums);
+      // break
+      for (let count = 0; count < nums.length; count++) {
+        if (nums[count] < 0) break;
+        console.log("break statement example: ", nums[count]);
+      }
+
+      //continue
+      for (let i = 0; i < nums.length; i++) {
+        if (nums[i] < 0) continue;
+        console.log("continue statement example", nums[i]);
+      }
+    </script>
+  </body>
+</html>
